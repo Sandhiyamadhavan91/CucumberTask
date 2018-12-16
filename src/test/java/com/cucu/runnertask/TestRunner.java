@@ -12,7 +12,13 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="src\\test\\java\\com\\cucu\\feature\\Amazon.feature", glue ="com.cucu.stepdeftask",plugin= {"pretty","html:Reports","junit:Reports/cucumber.xml","json:Reports/cucumber.json"} )
 
 public class TestRunner {
-	
+	public static void main(String[] args) {
+		
+		
+		String string = System.getProperty("user.dir").toString();
+		
+		System.out.println(string);
+	}
 		
 }
 
